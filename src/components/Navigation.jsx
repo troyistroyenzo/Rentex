@@ -53,11 +53,11 @@
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-              fontFamily={'heading'}
+              fontFamily={'inter'}
               color={useColorModeValue('gray.800', 'white')}
               fontWeight={900}
               fontSize={'x-large'}>
-              <Link to="/">BikeChain</Link> 
+              <Link to="/">RENTEX</Link> 
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

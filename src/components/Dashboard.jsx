@@ -19,8 +19,11 @@ const Dashboard = () => {
             <Bike bike={Bike1}/>
             <Bike bike={Bike3}/>
             <Bike bike={Bike2}/>
+            
         </Flex>
+        
         </Stack>
+        
     )
 
 

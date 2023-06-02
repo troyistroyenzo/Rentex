@@ -30,14 +30,15 @@ export default function Hero() {
           <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
-            Rent A Car <br />
+            lineHeight={'110%'}
+            fontFamily={'Inter'}>
+             Your Gateway to  <br />
             <Text as={'span'} color={'teal.400'}>
-              With Crypto!
+            Seamless Rentals
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
-          Seamlessly embrace the future of car rentals by leveraging the power of cryptocurrency. Experience convenience, privacy, and global accessibility. Say goodbye to traditional payment methods and embark on a secure journey towards freedom. Reserve your car now and explore the world with confidence!"
+          <Text color={'gray.500'} fontFamily={'Inter'}>
+          A groundbreaking decentralized rental platform that eliminates the need for intermediaries, putting you in full control of your renting experience. With our cutting-edge automated smart contract technology, you can securely and transparently rent anything you need, from equipment and vehicles to spaces and more. Say goodbye to cumbersome paperwork and unreliable middlemen. 
           </Text>
           <Stack
             direction={'column'}
@@ -50,11 +51,12 @@ export default function Hero() {
               colorScheme={'teal'}
               bg={'teal.400'}
               rounded={'full'}
+              fontFamily={'Inter'}
               px={6}
               _hover={{
                 bg: 'teal.500',
               }}>
-              Choose Bike
+              RENT NOW
             </Button>
             <Box>
               <Icon
@@ -66,13 +68,13 @@ export default function Hero() {
                 top={'10px'}
               />
               <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
+                fontSize={'md'}
+                fontFamily={'Inter'}
                 position={'absolute'}
-                right={'-125px'}
+                right={'-135px'}
                 top={'-15px'}
                 transform={'rotate(10deg)'}>
-                Rent with NO COST!
+                RENT WITH NO COST!
               </Text>
             </Box>
           </Stack>
