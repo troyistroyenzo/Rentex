@@ -9,7 +9,7 @@ const Bike = ({ bike }) => {
             <Text>Loren Ipsum</Text>
             <Stack spacing={0} direction={'row'} align={'center'}f justify={'center'} mt={5}>
                 <Button
-                fontColor={'white'}
+                color={'white'}
                 m={2}
                 fontSize={'sm'}
                 fontWeight={600}
@@ -22,7 +22,7 @@ const Bike = ({ bike }) => {
                 Checkout Bikke
                 </Button>
                 <Button
-                fontColor={'white'}
+                color={'white'}
                 m={2}
                 fontSize={'sm'}
                 fontWeight={600}

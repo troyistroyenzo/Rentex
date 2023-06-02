@@ -24,7 +24,7 @@ export default function PayForm() {
     <Flex justify={'center'} align={'center'} p={5} mt={10}>
     <form onSubmit={handleSubmit(onSubmit)}>
     <Text
-    fontFamilmy={'heading'}
+    fontFamily={'heading'}
     fontSize={'x-large'}
     fontWeight={600}
     mb={4}>
