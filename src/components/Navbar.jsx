@@ -94,9 +94,3 @@
   
   
   
-  
-  const NAV_ITEMS = [
-  
-   
-    
-  ];
