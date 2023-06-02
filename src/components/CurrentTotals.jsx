@@ -55,10 +55,11 @@ export default function BasicStatistics() {
     <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
       <chakra.h1
         textAlign={'center'}
+        fontFamily={'inter'}
         fontSize={'4xl'}
         py={10}
         fontWeight={'bold'}>
-        Welcome To Bike chain, Troy! What' sup
+        Here's a summary of your account.
       </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
@@ -79,7 +80,7 @@ export default function BasicStatistics() {
         <StatsCard
           title={'Bike Status'}
           stat={'Available'}
-          bgColor={'red'}
+          bgColor={'green.200'}
 
         />
       </SimpleGrid>
