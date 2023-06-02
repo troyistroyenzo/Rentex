@@ -15,7 +15,7 @@ const Dashboard = () => {
             spacing={{ base: 8, md: 14 }}
             py={{ base: 20, md: 36 }}>
         <CurrentTotals/>
-        <Flex justifyContent={'center'} alignItemss={'center'}>
+        <Flex justifyContent={'center'} alignItems={'center'}>
             <Bike bike={Bike1}/>
             <Bike bike={Bike3}/>
             <Bike bike={Bike2}/>
