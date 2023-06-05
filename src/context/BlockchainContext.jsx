@@ -1,5 +1,5 @@
-import React, { createContext, useState } from 'react';
-import { contractAbi, contractAddress } from '../config.json';
+import React, { useState } from 'react';
+import { abi, contractAddress } from '../config.json';
 import { ethers } from 'ethers';
 
 export const BlockchainContext = React.createContext();
@@ -12,14 +12,20 @@ export const BlockchainProvider = ({ children }) => {
 
   
     const Address = contractAddress;
-    const abi = contractAbi;
+    const contractAbi = abi;
     const contract = new ethers.Contract(address, contractAbi, signer);
 
+    const connectWallet = async () => {
+        try {
+            if (!window.ethereum) return alert ("Please install MetaMask first.")
+        } catch (err) {
+
+        }
+    }
     return (
         <BlockchainContextBlockchainContext.Provider 
         value={{}}>
-
-            { children}
+            { children }
         </BlockchainContextBlockchainContext.Provider>
     )
 
