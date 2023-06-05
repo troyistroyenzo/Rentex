@@ -17,7 +17,6 @@ function App() {
         <Route exact path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
-    s
     </>
   )
 }
