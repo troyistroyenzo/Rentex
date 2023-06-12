@@ -22,8 +22,12 @@
     ChevronRightIcon,
   } from '@chakra-ui/icons';
   
+import { BlockchainContext } from '../context/BlockchainContext';
+import { useContext } from 'react';
+  
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
+    const { connectWallet, currentAccount } = useContext(BlockchainContext);
   
     return (
       <Box>
@@ -71,6 +75,7 @@
             spacing={6}>
             
             <Button
+              onClick={connectWallet}
               as={'a'}
               display={{md: 'inline-flex' }}
               fontSize={'sm'}
@@ -81,11 +86,10 @@
               _hover={{
                 bg: 'teal.300',
               }}>
-              Connect Wallet
+              {!currentAccount ? "Connect Wallet" : `${currentAccount.slice(0, 5)}...${currentAccount.length - 4}`}
             </Button>
           </Stack>
         </Flex>
-  
         <Collapse in={isOpen} animateOpacity>
         </Collapse>
       </Box>

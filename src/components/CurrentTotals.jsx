@@ -85,8 +85,8 @@ export default function BasicStatistics() {
         />
       </SimpleGrid>
       <Flex justifyContent={'center'} alignItems={'center'}>
-        <PayForm/>
         <AddToBalanceForm/>
+        <PayForm/>
       </Flex>
     </Box>
   );
